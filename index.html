@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="weather-app">
+        <div class="location-search">
+            <input type="text" id="location-input" placeholder="Enter location...">
+            <button id="search-button">Search</button>
+        </div>
+        
+        <div class="current-weather">
+            <h1 id="location">Loading...</h1>
+            <h2 id="temperature">--°C</h2>
+            <p id="description">--</p>
+        </div>
+        
+        <div class="forecast">
+            <h3>7-Days Forecast</h3>
+            <div id="forecast-container">
+                <!-- Forecast cards will be inserted here by JavaScript -->
+            </div>
+        </div>
+        
+        <div class="additional-info">
+            <div>
+                <h4>Air Quality</h4>
+                <p id="air-quality">--</p>
+            </div>
+            <div>
+                <h4>UV Index</h4>
+                <p id="uv-index">--</p>
+            </div>
+            <div>
+                <h4>Sunrise</h4>
+                <p id="sunrise">--</p>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Bootstrap and jQuery Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
